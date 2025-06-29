@@ -1,0 +1,187 @@
+<!-- Archivo: header.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/logo-mj.svg" type="image/svg+xml">
+<meta property="og:image" content="https://tusitio.com/assets/logo-mj.svg">
+   <script defer src="js/index.js"></script>
+  <title>M&J Viandas</title>
+</head>
+<body>
+  <header id="header">
+    <div class="container header-inner">
+     <a href="#inicio" class="logo-container">
+  <img
+    src="imagenes/logo-mj.jpg"
+    alt="M&amp;J Viandas"
+    title="M&amp;J Viandas – Viandas saludables y caseras"
+    class="logo-img"
+  />
+</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#nosotras">Nosotras</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-ctas">
+        <a href="https://wa.me/+54911xxxxxxx" class="btn-whatsapp" aria-label="Enviar pedido por WhatsApp">Pedí por WhatsApp</a>
+        <a href="#" class="icon-cart" title="Mi carrito de compras" aria-label="Mi carrito de compras">
+          🛒 <span class="cart-count">0</span>
+        </a>
+      </div>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <!-- Archivo: hero.html -->
+<section id="hero">
+  <div class="hero-inner container">
+    <div class="hero-text">
+      <h1>Viandas saludables a tu puerta</h1>
+      <p>Planes diarios, semanales y mensuales diseñados por nutricionistas</p>
+      <div class="hero-ctas">
+        <a href="#planes" class="btn-hero">Elige tu plan</a>
+        <a href="https://wa.me/+54911xxxxxxx" class="btn-hero-secondary" aria-label="WhatsApp">Consultar por WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/hero-vianda.jpg" alt="Viandas saludables M&J" />
+    </div>
+  </div>
+</section>
+<!-- Archivo: planes.html -->
+<section id="planes" class="planes-section">
+  <div class="container planes-inner" role="region" aria-label="Planes disponibles">
+    <h2 class="planes-title">Elige tu plan ideal</h2>
+    <p class="planes-subtitle">Paquetes diseñados para tu ritmo de vida</p>
+    <div class="planes-grid">
+      <!-- Plan 1: Vianda suelta -->
+      <div class="plan-card" data-plan="individual">
+        <h3>Vianda suelta</h3>
+        <p class="precio">$XXX</p>
+        <p class="descripcion">Una unidad para probar o pedir en el día</p>
+        <div class="ctas">
+          <button class="btn-plan" data-action="add-to-cart" aria-label="Agregar Vianda suelta al carrito">Agregar al carrito</button>
+          <a class="btn-plan-secondary" href="https://wa.me/+54911xxxxxxx?text=Quiero%20la%20Vianda%20suelta%20de%20M%26J%20Viandas" target="_blank" aria-label="Pedir Vianda suelta por WhatsApp">Pedir por WhatsApp</a>
+        </div>
+      </div>
+      <!-- Plan 2: Pack 3 días -->
+      <div class="plan-card" data-plan="tres-dias">
+        <h3>Pack 3 días</h3>
+        <p class="precio">$XXX</p>
+        <p class="descripcion">Tres viandas listas para tu semana</p>
+        <div class="ctas">
+          <button class="btn-plan" data-action="add-to-cart" aria-label="Agregar Pack 3 días al carrito">Agregar al carrito</button>
+          <a class="btn-plan-secondary" href="https://wa.me/+54911xxxxxxx?text=Quiero%20el%20Pack%203%20días%20de%20M%26J%20Viandas" target="_blank" aria-label="Pedir Pack 3 días por WhatsApp">Pedir por WhatsApp</a>
+        </div>
+      </div>
+      <!-- Plan 3: Semana -->
+      <div class="plan-card" data-plan="semana">
+        <h3>Semana 🗓️</h3>
+        <p class="precio">$XXX</p>
+        <p class="descripcion">7 viandas para celébrate saludablemente</p>
+        <div class="ctas">
+          <button class="btn-plan" data-action="add-to-cart" aria-label="Agregar Semana al carrito">Agregar al carrito</button>
+          <a class="btn-plan-secondary" href="https://wa.me/+54911xxxxxxx?text=Quiero%20el%20Plan%20Semana%20de%20M%26J%20Viandas" target="_blank" aria-label="Pedir Semana por WhatsApp">Pedir por WhatsApp</a>
+        </div>
+      </div>
+      <!-- Plan 4: Plan mensual -->
+      <div class="plan-card" data-plan="mensual">
+        <h3>Plan mensual</h3>
+        <p class="precio">$XXX</p>
+        <p class="descripcion">30 viandas con descuento exclusivo</p>
+        <small class="nota-descuento">–15% si elegís el plan mensual</small>
+        <div class="ctas">
+          <button class="btn-plan" data-action="add-to-cart" aria-label="Agregar Plan mensual al carrito">Agregar al carrito</button>
+          <a class="btn-plan-secondary" href="https://wa.me/+54911xxxxxxx?text=Quiero%20el%20Plan%20mensual%20de%20M%26J%20Viandas" target="_blank" aria-label="Pedir Plan mensual por WhatsApp">Pedir por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contacto" class="contacto-section">
+  <div class="container contacto-inner">
+    <div class="contacto-form">
+      <h2>¡Hablemos!</h2>
+      <p>¿Tenés dudas o querés tu plan personalizado? Escríbenos y te respondemos rápido.</p>
+      <form id="contactForm">
+        <label for="contact-name">Nombre</label>
+        <input type="text" id="contact-name" name="name" placeholder="Tu nombre" required />
+        <span class="error-message" id="error-name"></span>
+
+        <label for="contact-email">Email</label>
+        <input type="email" id="contact-email" name="email" placeholder="tucorreo@ejemplo.com" required />
+        <span class="error-message" id="error-email"></span>
+
+        <label for="contact-phone">Teléfono</label>
+        <input type="tel" id="contact-phone" name="phone" placeholder="11 1234-5678" />
+        <span class="error-message" id="error-phone"></span>
+
+        <label for="contact-message">Mensaje</label>
+        <textarea id="contact-message" name="message" rows="4" placeholder="Contanos qué necesitás" required></textarea>
+        <span class="error-message" id="error-message"></span>
+
+        <button type="submit" class="btn-contact">Enviar mensaje</button>
+      </form>
+    </div>
+    <div class="contacto-info">
+      <div class="info-list">
+        <p><i class="icon-phone"></i> +54 9 11 XXXX‑XXXX</p>
+        <p><i class="icon-mail"></i> hola@mjviandas.com.ar</p>
+        <p><i class="icon-instagram"></i> @mjviandas</p>
+      </div>
+      <a href="https://wa.me/+54911xxxxxxx?text=¡Hola!%20Quiero%20información%20sobre%20las%20viandas" target="_blank" class="contact-whatsapp" aria-label="Chat por WhatsApp">
+        <i class="icon-whatsapp"></i> O pedí tu plan por WhatsApp
+      </a>
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." title="Ubicación M&J Viandas" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer" class="footer-section">
+  <div class="container footer-inner" role="contentinfo">
+    <div class="footer-col-1">
+  <img
+    src="imagenes/logo-mj.jpg"
+    alt="M&amp;J Viandas"
+    class="footer-logo"
+  />
+  <p class="footer-copy">© <span id="footer-year">2025</span> M&J Viandas. Todos los derechos reservados.</p>
+</div>
+    <div class="footer-col footer-col-2">
+      <ul class="footer-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#nosotras">Nosotras</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <ul class="footer-policies">
+        <li><a href="/terminos">Términos y condiciones</a></li>
+        <li><a href="/privacidad">Política de privacidad</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-col-3">
+      <div class="footer-social">
+        <a href="https://instagram.com/mjviandas" aria-label="Instagram"><i class="icon-instagram"></i></a>
+        <a href="https://tiktok.com/@mjviandas" aria-label="TikTok"><i class="icon-tiktok"></i></a>
+        <a href="https://wa.me/+54911xxxxxxx" aria-label="WhatsApp"><i class="icon-whatsapp"></i></a>
+      </div>
+      <p class="footer-contact">Email: hola@mjviandas.com.ar</p>
+      <p class="footer-contact">Tel: +54 9 11 XXXX-XXXX</p>
+      <p class="footer-credit">Desarrollado por Facundo García Engel</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
