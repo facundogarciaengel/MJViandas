@@ -5,6 +5,17 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- Preconnect para acelerar la carga de fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Carga de la familia Caveat (400 a 700) -->
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" 
+    rel="stylesheet"
+  >
+
+  <!-- Tu hoja de estilos principal -->
+  <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="style.css" />
   <!-- Favicon -->
 <link rel="icon" href="assets/imagenes/logo-mj.png" type="image/webp">
@@ -20,21 +31,18 @@
 <body>
   <header id="header">
     <div class="container header-inner">
-   <a href="#inicio" class="logo-container">
-  <picture>
-    <!-- Logo para pantallas ≤ 768px -->
-    <source
-      media="(max-width: 768px)"
-      srcset="assets/imagenes/logo-mj-mobile.png"
-    />
-    <!-- Logo por defecto (desktop) -->
-    <img
-      src="assets/imagenes/logo-mj.png"
-      alt="M&J Viandas"
-      title="M&J Viandas – Viandas saludables y caseras"
-      class="logo-img"
-    />
-  </picture>
+  <!-- header.html -->
+<a href="#inicio" class="logo-container">
+  <!-- Logo desktop -->
+  <img
+    src="assets/imagenes/logo-mj.png"
+    alt="M&J Viandas"
+    class="logo-img"
+    loading="lazy"
+  />
+  <!-- Texto logo mobile -->
+  <span class="logo-text">M&amp;J Viandas</span>
+
 </a>
 
       <nav class="main-nav">

@@ -11,7 +11,12 @@
 }
 
 /* Reset básico */
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --logo-mobile-color: #97AA93;
+}
+
 
 /* Header general */
 #header {
@@ -32,10 +37,20 @@
   padding: 1rem 2rem;
 }
 
+/*Oculta el texto por defecto */
+.logo-text {
+  font-family: 'Caveat', cursive;
+  font-weight: 700;           /* peso grueso para buena legibilidad */
+  font-optical-sizing: auto;  /* ajuste óptico si el navegador lo soporta */
+  display: none;              /* oculto por defecto (desktop) */
+}
+
+/*Desktop: mantiene el logo en imagen */
 .logo-img {
   height: 60px;
   width: auto;
 }
+
 
 /* Navegación */
 .main-nav ul {
@@ -139,6 +154,18 @@
 }
 
 @media (max-width: 768px) {
+ .logo-img {
+    display: none !important;
+  }
+   .logo-text {
+    display: inline-block;
+    font-size: 2.2rem;       /* ajústalo entre 2rem–2.5rem según tu header */
+    color: var(--logo-mobile-color); 
+    line-height: 1;
+    white-space: nowrap;
+    margin: 0;               /* sin márgenes extra */
+  }
+  /* Tu CSS móvil existente para nav-toggle, etc. */
   .main-nav,
   .header-ctas {
     display: none;
@@ -146,8 +173,6 @@
   .nav-toggle {
     display: flex;
   }
-
-  /* Menu desplegable */
   .main-nav.active {
     display: block;
     width: 100%;
@@ -164,9 +189,6 @@
     flex-direction: column;
     gap: 1rem;
     padding: 1rem 0;
-  }
-   .logo-img {
-    max-height: 50px; /* o el tamaño que prefieras en móvil */
   }
 }
 
@@ -647,7 +669,7 @@
 
 :root {
   --logo-height-desktop: 80px;
-  --logo-height-mobile: 32px;
+  --logo-height-mobile: 900px;
 }
 
 .logo-img {
@@ -662,8 +684,14 @@
 }
 
 @media (max-width: 768px) {
-  .logo-img {
-    height: var(--logo-height-mobile);
+    .logo-container {
+    flex: 1;              /* ocupa todo el hueco entre ambos extremos */
+    margin-right: 0.5rem; /* un poco de separación antes del toggle */
+  }
+    .logo-img {
+    width: 100%;          /* rellena el contenedor */
+    height: auto;         /* mantiene la proporción */
+    max-height: 50px;     /* límite vertical para no explotar la altura */
   }
 }
 
