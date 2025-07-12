@@ -20,14 +20,23 @@
 <body>
   <header id="header">
     <div class="container header-inner">
-     <a href="#inicio" class="logo-container">
-  <img
-    src="assets/imagenes/logo-mj.png"
-    alt="M&amp;J Viandas"
-    title="M&amp;J Viandas – Viandas saludables y caseras"
-    class="logo-img"
-  />
+   <a href="#inicio" class="logo-container">
+  <picture>
+    <!-- Logo para pantallas ≤ 768px -->
+    <source
+      media="(max-width: 768px)"
+      srcset="assets/imagenes/logo-mj-mobile.png"
+    />
+    <!-- Logo por defecto (desktop) -->
+    <img
+      src="assets/imagenes/logo-mj.png"
+      alt="M&J Viandas"
+      title="M&J Viandas – Viandas saludables y caseras"
+      class="logo-img"
+    />
+  </picture>
 </a>
+
       <nav class="main-nav">
         <ul>
           <li><a href="#inicio">Inicio</a></li>
