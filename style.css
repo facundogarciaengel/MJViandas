@@ -17,7 +17,7 @@
 #header {
   position: sticky;
   top: 0;
-  background-color: var(--color-white);
+  background-color:#F6F4F1;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -45,15 +45,15 @@
 
 .main-nav a {
   text-decoration: none;
-  font-family: var(--font-body);
+  font-family: var(--font-heading);
   font-weight: 600;
-  color: var(--color-dark);
+  color: var(--color-primary);
   transition: color 0.2s;
 }
 
 .main-nav a:hover,
 .main-nav a:focus {
-  color: var(--color-primary);
+  color: var(--color-dark);
 }
 
 /* CTAs */
@@ -76,13 +76,13 @@
 
 .btn-whatsapp:hover,
 .btn-whatsapp:focus {
-  background-color: #85A285; /* slight darken */
+  background-color: var(--color-dark); /* slight darken */
 }
 
 .icon-cart {
   font-size: 1.25rem;
   position: relative;
-  color: var(--color-dark);
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -549,7 +549,7 @@
 }
 
 .footer-section {
-  background-color: var(--color-dark);
+  background-color: var(--color-primary);
   color: var(--color-white);
   padding: 3rem 2rem;
 }
@@ -642,7 +642,7 @@
 }
 
 :root {
-  --logo-height-desktop: 280px;
+  --logo-height-desktop: 80px;
   --logo-height-mobile: 32px;
 }
 
