@@ -32,7 +32,7 @@
   padding: 1rem 2rem;
 }
 
-.logo img {
+.logo-img {
   height: 40px;
 }
 
@@ -562,7 +562,7 @@
   align-items: start;
 }
 .footer-logo {
-  max-width: 120px;
+  max-width: 200px;
   margin-bottom: 1rem;
 }
 .footer-copy {
@@ -642,7 +642,7 @@
 }
 
 :root {
-  --logo-height-desktop: 40px;
+  --logo-height-desktop: 280px;
   --logo-height-mobile: 32px;
 }
 
