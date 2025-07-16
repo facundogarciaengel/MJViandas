@@ -93,7 +93,7 @@
         <p class="precio">$XXX</p>
         <p class="descripcion">Una unidad para probar o pedir en el día</p>
         <div class="ctas">
-          <button class="btn-plan" data-action="add-to-cart" aria-label="Agregar Vianda suelta al carrito">Agregar al carrito</button>
+          <button class="btn-plan" data-action="select-viandas" aria-label="Elige Tus Viandas">Elige Tu Vianda</button>
           <a class="btn-plan-secondary" href="https://wa.me/+54911xxxxxxx?text=Quiero%20la%20Vianda%20suelta%20de%20M%26J%20Viandas" target="_blank" aria-label="Pedir Vianda suelta por WhatsApp">Pedir por WhatsApp</a>
         </div>
       </div>
@@ -103,7 +103,7 @@
         <p class="precio">$XXX</p>
         <p class="descripcion">Tres viandas listas para tu semana</p>
         <div class="ctas">
-          <button class="btn-plan" data-action="add-to-cart" aria-label="Agregar Pack 3 días al carrito">Agregar al carrito</button>
+          <button class="btn-plan" data-action="select-viandas" aria-label="Elige Tus Viandas">Elige Tus Viandas</button>
           <a class="btn-plan-secondary" href="https://wa.me/+54911xxxxxxx?text=Quiero%20el%20Pack%203%20días%20de%20M%26J%20Viandas" target="_blank" aria-label="Pedir Pack 3 días por WhatsApp">Pedir por WhatsApp</a>
         </div>
       </div>
@@ -113,7 +113,7 @@
         <p class="precio">$XXX</p>
         <p class="descripcion">7 viandas para celébrate saludablemente</p>
         <div class="ctas">
-          <button class="btn-plan" data-action="add-to-cart" aria-label="Agregar Semana al carrito">Agregar al carrito</button>
+          <button class="btn-plan" data-action="select-viandas" aria-label="Elige Tus Viandas">Elige Tus Viandas</button>
           <a class="btn-plan-secondary" href="https://wa.me/+54911xxxxxxx?text=Quiero%20el%20Plan%20Semana%20de%20M%26J%20Viandas" target="_blank" aria-label="Pedir Semana por WhatsApp">Pedir por WhatsApp</a>
         </div>
       </div>
@@ -124,13 +124,24 @@
         <p class="descripcion">30 viandas con descuento exclusivo</p>
         <small class="nota-descuento">–15% si elegís el plan mensual</small>
         <div class="ctas">
-          <button class="btn-plan" data-action="add-to-cart" aria-label="Agregar Plan mensual al carrito">Agregar al carrito</button>
+          <button class="btn-plan" data-action="select-viandas" aria-label="Elige Tus Viandas">Elige Tus Viandas</button>
           <a class="btn-plan-secondary" href="https://wa.me/+54911xxxxxxx?text=Quiero%20el%20Plan%20mensual%20de%20M%26J%20Viandas" target="_blank" aria-label="Pedir Plan mensual por WhatsApp">Pedir por WhatsApp</a>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- ===== VIANDAS DINÁMICAS ===== -->
+<section id="viandas-seleccion" class="viandas-section">
+  <div class="container viandas-inner">
+    <h2>Elige tus viandas</h2>
+    <div id="viandas-container" class="cards-container">
+      <!-- Aquí inyectará JS las viandas desde Google Sheets -->
+    </div>
+    <button id="btn-confirmar-menu" class="btn-primary" disabled>Confirmar menú</button>
+  </div>
+</section>
+
 <section id="contacto" class="contacto-section">
   <div class="container contacto-inner">
     <div class="contacto-form">
@@ -200,9 +211,9 @@
         <a href="https://tiktok.com/@mjviandas" aria-label="TikTok"><i class="icon-tiktok"></i></a>
         <a href="https://wa.me/+54911xxxxxxx" aria-label="WhatsApp"><i class="icon-whatsapp"></i></a>
       </div>
-      <p class="footer-contact">Email: hola@mjviandas.com.ar</p>
-      <p class="footer-contact">Tel: +54 9 11 XXXX-XXXX</p>
-      <p class="footer-credit">Desarrollado por Facundo García Engel</p>
+      <p class="footer-contact">📧: mjviandas@gmail.com</p>
+      <p class="footer-contact">📞: +54 9 11 2404-7100</p>
+      <p class="footer-credit">Hecho con 💚</p>
     </div>
   </div>
 </footer>
