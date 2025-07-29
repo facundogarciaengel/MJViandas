@@ -1,15 +1,18 @@
 // js/index.js
-document.addEventListener('DOMContentLoaded', () => {
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('.hero-slider img');
   let current = 0;
-  setInterval(() => {
-    images[current].classList.remove('active');
-    current = (current + 1) % images.length;
-    images[current].classList.add('active');
+  if(images.length){
+    images[0].classList.add('active');
+    setInterval(() => {
+      images[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
   }, 3500);
-});
+  }
+
 
 
   // === 1) Toggle nav móvil ===

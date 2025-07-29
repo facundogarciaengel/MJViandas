@@ -195,11 +195,13 @@
 
 /* Hero Section */
 #hero {
-  padding: 100px 2rem;
+  padding: 100px 1rem;
   position: relative;
   background-color: var(--color-white);
+  
+ 
 }
-.hero-slider img {
+/* .hero-slider img {
   display: none;
   width: 100%;
   border-radius: 16px;
@@ -209,54 +211,94 @@
 .hero-slider img.active {
   display: block;
   opacity: 1;
-}
+} */
 
 .hero-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
+  justify-content: center;
+  gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 .hero-text {
   flex: 1 1 0;
-  max-width: 260px;
+  max-width: 480px;
+  font-size: 1.15rem;
+
 }
 .hero-slider {
   flex: 1 1 0;
   min-width: 260px;
-  max-width: 420px;
+  max-width: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(33,150,243,0.10);
+  
+
 }
 
-.hero-slider img {
+/* .hero-slider img {
   display: none;
   width: 100%;
-  max-width: 420px;
+  height: auto;
+  max-width: 520px;
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.10);
   transition: opacity 0.5s;
   position: absolute;
   left: 0; top: 0;
   opacity: 0;
+} */
+ .hero-slider img {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%;
+  height: auto;
+  max-width: 520px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  opacity: 0;
+  filter: brightness(0.93) saturate(1.1) drop-shadow(0 4px 24px rgba(33,150,243,0.10));
+  transform: scale(1.03);
+  transition: opacity 1s cubic-bezier(.4,0,.2,1), filter 0.5s, transform 1s cubic-bezier(.4,0,.2,1);
+  z-index: 1;
+  pointer-events: none;
 }
 
-.hero-slider img.active {
+/* .hero-slider img.active {
   display: block;
   opacity: 1;
   position: relative;
   z-index: 2;
+} */
+.hero-slider img.active {
+  opacity: 1;
+  filter: brightness(1.08) saturate(1.2) drop-shadow(0 8px 32px rgba(33,150,243,0.13));
+  transform: scale(1);
+  z-index: 2;
+  pointer-events: auto;
 }
 
+/* Opcional: overlay sutil para dar profundidad */
+.hero-slider::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(120deg, rgba(255,255,255,0.08) 0%, rgba(33,150,243,0.10) 100%);
+  border-radius: 18px;
+  z-index: 3;
+}
 
 .hero-text h1 {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 3.2rem;
   margin-bottom: 1rem;
   color: var(--color-dark);
 }
@@ -353,7 +395,7 @@
     flex: 1 1 100%;
   }
   .hero-text h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .hero-text p {
     font-size: 1rem;
