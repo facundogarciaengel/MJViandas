@@ -1,225 +1,75 @@
-<!-- Archivo: header.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <!-- Preconnect para acelerar la carga de fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Carga de la familia Caveat (400 a 700) -->
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" 
-    rel="stylesheet"
-  >
-
-  <!-- Tu hoja de estilos principal -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- Favicon -->
-<link rel="icon" href="assets/imagenes/logo-mj.png" type="image/webp">
-
-<!-- Open Graph para redes sociales -->
-<meta property="og:title" content="M&J Viandas">
-<meta property="og:description" content="Viandas saludables a tu puerta">
-<meta property="og:image" content="https://mjviandas.com.ar/assets/imagenes/logo-mj.png">
-<meta property="og:url" content="https://mjviandas.com.ar/">
-   <script defer src="js/index.js"></script>
-  <title>M&J Viandas</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>M&amp;J Viandas - Comida Saludable a Domicilio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+<link rel="stylesheet" href="./styles.css"/>
 </head>
+
 <body>
-  <header id="header">
-    <div class="container header-inner">
-  <!-- header.html -->
-<a href="#inicio" class="logo-container">
-  <!-- Logo desktop -->
-  <img
-    src="assets/imagenes/logo-mj.png"
-    alt="M&J Viandas"
-    class="logo-img"
-    loading="lazy"
-  />
-  <!-- Texto logo mobile -->
-  <span class="logo-text">M&amp;J Viandas</span>
-
-</a>
-
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#planes">Planes</a></li>
-          <li><a href="#nosotras">Nosotras</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-      <div class="header-ctas">
-        <a href="https://wa.me/+54911xxxxxxx" class="btn-whatsapp" aria-label="Enviar pedido por WhatsApp">Pedí por WhatsApp</a>
-        <a href="#" class="icon-cart" title="Mi carrito de compras" aria-label="Mi carrito de compras">
-          🛒 <span class="cart-count">0</span>
-        </a>
-      </div>
-      <button class="nav-toggle" aria-label="Abrir menú">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-  <!-- Archivo: hero.html -->
-<section id="hero">
-  <div class="hero-inner container">
-    <div class="hero-text">
-      <h1>Viandas saludables a tu puerta</h1>
-      <p>Planes diarios, semanales y mensuales diseñados por nutricionistas</p>
-      <div class="hero-ctas">
-        <a href="#planes" class="btn-hero">Elige tu plan</a>
-        <a href="https://wa.me/+54911xxxxxxx" class="btn-hero-secondary" aria-label="WhatsApp">Consultar por WhatsApp</a>
-      </div>
-    </div>
-    <div class="hero-slider">
-      <img src="/assets/imagenes/hero1.png" alt="Vianda saludable 1" class="active" />
-      <img src="/assets/imagenes/hero2.png" alt="Vianda saludable 2" />
-      <img src="/assets/imagenes/hero3.png" alt="Vianda saludable 3" />
-      <img src="/assets/imagenes/hero4.png" alt="Vianda saludable 4" />
-      <img src="/assets/imagenes/hero5.png" alt="Vianda saludable 5" />
-      <img src="/assets/imagenes/hero6.png" alt="Vianda saludable 6" />
-    </div>
-  </div>
-</section>
-<!-- Archivo: planes.html -->
-<section id="planes" class="planes-section">
-  <div class="container planes-inner" role="region" aria-label="Planes disponibles">
-    <h2 class="planes-title">Elige tu plan ideal</h2>
-    <p class="planes-subtitle">Paquetes diseñados para tu ritmo de vida</p>
-    <div class="planes-grid">
-      <!-- Plan 1: Vianda suelta -->
-      <div class="plan-card" data-plan="individual">
-        <h3>Vianda Individual</h3>
-        <p class="precio">$7.000</p>
-        <p class="descripcion">Una unidad para probar o pedir en el día</p>
-        <div class="ctas">
-          <button class="btn-plan" data-action="select-viandas" aria-label="Elige Tus Viandas">Elige Tu Vianda</button>
-          <a class="btn-plan-secondary" href="https://wa.me/+54911xxxxxxx?text=Quiero%20la%20Vianda%20suelta%20de%20M%26J%20Viandas" target="_blank" aria-label="Pedir Vianda suelta por WhatsApp">Pedir por WhatsApp</a>
+    <header class="header-principal">
+        
+            <h4>M&J Viandas</h4>
+        <div>
+       
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Planes</a>
+                <a href="#">Sobre Nosotras</a>
+            </nav>
         </div>
-      </div>
-      <!-- Plan 2: Pack 3 días -->
-      <div class="plan-card" data-plan="tres-dias">
-        <h3>Pack x3</h3>
-        <p class="precio">$20.000</p>
-        <p class="descripcion">Tres viandas listas para tu semana</p>
-        <div class="ctas">
-          <button class="btn-plan" data-action="select-viandas" aria-label="Elige Tus Viandas">Elige Tus Viandas</button>
-          <a class="btn-plan-secondary" href="https://wa.me/+54911xxxxxxx?text=Quiero%20el%20Pack%203%20días%20de%20M%26J%20Viandas" target="_blank" aria-label="Pedir Pack 3 días por WhatsApp">Pedir por WhatsApp</a>
-        </div>
-      </div>
-      <!-- Plan 3: Semana -->
-      <div class="plan-card" data-plan="semana">
-        <h3>Plan Semanal </h3>
-        <p class="precio">$30.000</p>
-        <p class="descripcion">7 viandas para celébrate saludablemente</p>
-        <div class="ctas">
-          <button class="btn-plan" data-action="select-viandas" aria-label="Elige Tus Viandas">Elige Tus Viandas</button>
-          <a class="btn-plan-secondary" href="https://wa.me/+54911xxxxxxx?text=Quiero%20el%20Plan%20Semana%20de%20M%26J%20Viandas" target="_blank" aria-label="Pedir Semana por WhatsApp">Pedir por WhatsApp</a>
-        </div>
-      </div>
-      <!-- Plan 4: Plan mensual -->
-      <div class="plan-card" data-plan="mensual">
-        <h3>Plan mensual</h3>
-        <p class="precio">$100.000</p>
-        <p class="descripcion">30 viandas con descuento exclusivo</p>
-        <small class="nota-descuento">–15% si elegís el plan mensual</small>
-        <div class="ctas">
-          <button class="btn-plan" data-action="select-viandas" aria-label="Elige Tus Viandas">Elige Tus Viandas</button>
-          <a class="btn-plan-secondary" href="https://wa.me/+54911xxxxxxx?text=Quiero%20el%20Plan%20mensual%20de%20M%26J%20Viandas" target="_blank" aria-label="Pedir Plan mensual por WhatsApp">Pedir por WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ===== VIANDAS DINÁMICAS ===== -->
-<section id="viandas-seleccion" class="viandas-section">
-  <div class="container viandas-inner">
-    <h2>Elige tus viandas</h2>
-    <div id="viandas-container" class="cards-container">
-      <!-- Aquí inyectará JS las viandas desde Google Sheets -->
-    </div>
-    <button id="btn-confirmar-menu" class="btn-primary" disabled>Confirmar menú</button>
-  </div>
-</section>
-
-<section id="contacto" class="contacto-section">
-  <div class="container contacto-inner">
-    <div class="contacto-form">
-      <h2>¡Hablemos!</h2>
-      <p>¿Tenés dudas o querés tu plan personalizado? Escríbenos y te respondemos rápido.</p>
-      <form id="contactForm">
-        <label for="contact-name">Nombre</label>
-        <input type="text" id="contact-name" name="name" placeholder="Tu nombre" required />
-        <span class="error-message" id="error-name"></span>
-
-        <label for="contact-email">Email</label>
-        <input type="email" id="contact-email" name="email" placeholder="tucorreo@ejemplo.com" required />
-        <span class="error-message" id="error-email"></span>
-
-        <label for="contact-phone">Teléfono</label>
-        <input type="tel" id="contact-phone" name="phone" placeholder="11 1234-5678" />
-        <span class="error-message" id="error-phone"></span>
-
-        <label for="contact-message">Mensaje</label>
-        <textarea id="contact-message" name="message" rows="4" placeholder="Contanos qué necesitás" required></textarea>
-        <span class="error-message" id="error-message"></span>
-
-        <button type="submit" class="btn-contact">Enviar mensaje</button>
-      </form>
-    </div>
-    <div class="contacto-info">
-      <div class="info-list">
-        <p><i class="icon-phone"></i> +54 9 11 XXXX‑XXXX</p>
-        <p><i class="icon-mail"></i> hola@mjviandas.com.ar</p>
-        <p><i class="icon-instagram"></i> @mjviandas</p>
-      </div>
-      <a href="https://wa.me/+54911xxxxxxx?text=¡Hola!%20Quiero%20información%20sobre%20las%20viandas" target="_blank" class="contact-whatsapp" aria-label="Chat por WhatsApp">
-        <i class="icon-whatsapp"></i> O pedí tu plan por WhatsApp
-      </a>
-      <div class="contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." title="Ubicación M&J Viandas" loading="lazy"></iframe>
-      </div>
-    </div>
-  </div>
-</section>
-<footer id="footer" class="footer-section">
-  <div class="container footer-inner" role="contentinfo">
-    <div class="footer-col-1">
-  <img
-    src="assets/imagenes/logo-footer.png"
-    alt="M&amp;J Viandas"
-    class="footer-logo"
-  />
-  <p class="footer-copy">© <span id="footer-year">2025</span> M&J Viandas. Todos los derechos reservados.</p>
-</div>
-    <div class="footer-col footer-col-2">
-      <ul class="footer-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#planes">Planes</a></li>
-        <li><a href="#nosotras">Nosotras</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-      <ul class="footer-policies">
-        <li><a href="/terminos">Términos y condiciones</a></li>
-        <li><a href="/privacidad">Política de privacidad</a></li>
-      </ul>
-    </div>
-    <div class="footer-col footer-col-3">
-      <div class="footer-social">
-        <a href="https://instagram.com/mjviandas" aria-label="Instagram"><i class="icon-instagram"></i></a>
-        <a href="https://tiktok.com/@mjviandas" aria-label="TikTok"><i class="icon-tiktok"></i></a>
-        <a href="https://wa.me/+54911xxxxxxx" aria-label="WhatsApp"><i class="icon-whatsapp"></i></a>
-      </div>
-      <p class="footer-contact">📧: mjviandas@gmail.com</p>
-      <p class="footer-contact">📞: +54 9 11 2404-7100</p>
-      <p class="footer-credit">Hecho con 💚</p>
-    </div>
-  </div>
-</footer>
+    </header>
+    <section class="hero-section">
+        <header>
+            
+                <h1>Comida <span class="span"> Saludable</span>, Vida Feliz</h1>
+                <p>Platos deliciosos y nutritivos, <span id="texto-span-hero">pensados y cocinados por nutricionistas</span>
+                entregados en tu puerta en San Miguel, Muñiz, y alrededores.
+                </p>  
+        </header>
+        <img alt="Plato de ensalada fresca y saludable" class="hero-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIrYyy77-dP_deNCNI4sWnJFO7YovvWn6mu83uV2nI04_CUAegXc5FOiLoE1vSHmpP_9XDSKYO-SbHQcz7WeTqS2TSCGJhNZ6D_S3ewJIvX9pQ3Ln4ld7_OgMqwiJpzHn5UQoQXDtlB4nEiXXrYp9RZzs-XVHVKVkIRrgttVn8UNm8oKYXzblJGSKuRaR5Xo_ZKnXWMywUWxwZNfswQAaSe-WtZBpelDmXf74SlWQ5vNpx7pbxrk8kW5osB-bcmrOwDXvUvyLyztE"/>
+    </section>
+    <section class="seccion-planes">
+        <header>
+            <h2>Nuestros Planes a Medida</h2>
+        </header>
+            <section class="articles-planes">
+                <article data-plan="menu-individual">
+                    <span class="material-symbols-outlined">person</span>
+                    <h3>Individual</h3>
+                    <p>Perfecto para probar nuestros sabores o para una comida rápida y saludable.</p>
+                    <hr/>
+                    <a href="#">Elegir Plato</a>
+                </article>
+                <article data-plan="pack-de-3">
+                    <span class="material-symbols-outlined">filter_3</span>
+            <script src=""></script>        <h3>Pack de 3</h3>
+                    <p>Organiza tus comidas para un par de días y ahorrá tiempo.</p>
+                    <hr />
+                    <a href="#">Ver Pack</a>
+                </article>
+                <article data-plan="pack-semanal">
+                    <span class="material-symbols-outlined">date_range</span>
+                    <h3>Pack Semanal</h3>
+                    <p>La solución ideal para tus almuerzos o cenas de toda la semana.</p>
+                    <hr/>
+                    <a href="#">Armar Semana</a>
+                </article>
+                <article data-plan="plan-mensual">
+                    <span class="material-symbols-outlined">calendar_month</span>
+                    <h3>Plan Mensual</h3>
+                    <p>Despreocupate por completo y recibí comida saludable todo el mes.</p>
+                    <hr/>
+                    <a>Consultar Plan</a>
+                </article>
+            </section>
+           <section class="seccion-contacto">
+            <a class="anchor-whatsapp" href="#" target="_blank" 
+   rel="noopener noreferrer">¡Pedí Ahora por WhatsApp!</a>
+           </section> 
+    </section>
+    <script src="index.js"></script>
 </body>
 </html>
