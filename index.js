@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', ()=>{
-const numeroWp = '5491169017827' //'5491124047100';
+const numeroWp = '5491124047100' //'5491124047100';
 const urlBaseWp = `https://api.whatsapp.com/send?phone=${numeroWp}`;
 const msjGenerico = 'Hola, ¡me gustaría consultar sobre sus planes y menús!';
 

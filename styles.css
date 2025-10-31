@@ -39,10 +39,11 @@ body{
 .header-principal{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+    justify-content:center;
+    gap: 60rem;
     background: var(--background-light);
     padding: .5rem 1rem; 
+    margin-bottom: 1rem;
 }
    .header-principal h4{
         font-size: 1.25rem;
@@ -120,8 +121,8 @@ body{
     .hero-img{
         border-radius: 50%;
         object-fit: cover;
+        border: none;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
        
     }
     
